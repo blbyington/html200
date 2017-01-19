@@ -1,0 +1,74 @@
+5 > 4 && false
+true && false
+false
+
+true && 5 * 2 > 3 + 3 * 2
+true && 10 > 3 + 6
+true && 10 > 9
+true && true
+true
+
+true && 5 * 2 > (3 + 3) * 2
+true && 5 * 2 > 6 * 2
+true && 10 > 12
+true && false
+false
+
+4 == "4"
+4 == "4" || 4 == 4
+10 % 3 == 10.0 % 3
+10 % 3 || 10.0 % 3
+true
+
+10 * (5 / 2.0) == 10.0 * (5 / 2)
+10 * 2.5 == 10.0 *  2.5
+25 == 25
+true
+10 * 5 / 2 > 10 * (5 / 2)
+50 / 2 > 10 * 2.5
+25 > 25
+false
+
+2 * 2 ** 3 == (2 * 2) ** 3
+2 * 8 == 4 ** 3
+16 == 64
+false
+(10 - 4) < +6 || -(2 * -4) > 0
+6 < +6 || 8 > 0
+
+
+for (var x = 0; x <= 17; x = x + 2) {
+  console.log(2 * x + 7);
+}
+2 * 0 + 7 = 7
+2 * 2 + 7 = 11
+2 * 4 + 7 = 15
+2 * 6 + 7 = 19
+2 * 8 + 7 = 23
+2 * 10 + 7 = 27
+2 * 12 + 7 = 31
+2 * 14 + 7 = 35
+2 * 16 + 7 = 39
+
+
+// check out page 15 in Head First JavaScript for
+// info about the substr() function below
+
+var alpha = 'mpeuorwr';
+var s1 = '';
+var s2 = '';
+
+for (var index = 0; index < alpha.length; index++) {
+  if (index % 2 == 0) {
+    s1 = s1 + alpha.substr(index, 1);
+  } else {
+    s2 = s2 + alpha.substr(index, 1);
+  }
+}
+
+console.log(s1 + s2);
+
+s1 = meow
+s2 = purr
+
+console.log (s1 + s2); = meowpurr
